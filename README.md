@@ -18,14 +18,8 @@ OpenCV is not necessarily required, provided that you have found another way to 
 Input | Output
 ------------ | -------------
 ![Input](assets/Map50_1_Out.png) | ![Output](assets/Map50_1_Path.png)
-
-Input | Output
------------- | -------------
 ![Input](assets/Map50_2_Out.png) | ![Output](assets/Map50_2_Path.png)
-
-Input | Output
------------- | -------------
-![Input](assets/Map50_3_Out.png)| ![Output](assets/Map50_3_Path.png)
+![Input](assets/Map50_3_Out.png) | ![Output](assets/Map50_3_Path.png)
 
 ### Could you buy me a cup of cappuccino?
 PayPal | Alipay
