@@ -6,9 +6,10 @@ This is an widely used pathfinding and searhing algorithm, learn more about A* a
 OpenCV is not necessarily required, provided that you have found another way to convert input images into arrays which have the same format used in the example.
 
 ### Map samples
+
+[Map 50px 1](assets/Map50_1.bmp) | [Map 50px 2](assets/Map50_2.bmp) | [Map 50px 3](assets/Map50_3.bmp)
 ------------ | ------------- | -------------
 ![Map 50px 1](assets/Map50_1.bmp) | ![Map 50px 2](assets/Map50_2.bmp) | ![Map 50px 3](assets/Map50_3.bmp)
-[Map 50px 1](assets/Map50_1.bmp) | [Map 50px 2](assets/Map50_2.bmp) | [Map 50px 3](assets/Map50_3.bmp)
 
 ### Previews
 
