@@ -1,7 +1,7 @@
 # A-star
 A* pathfinding algorithm (a.k.a. A* search algorithm) written in C++
 
-This is an widely used pathfinding and searhing algorithm, learn more about A* at [Wikipedia](https://en.wikipedia.org/wiki/A*_search_algorithm).
+This is an widely used pathfinding and searhing algorithm; learn more about A* at [Wikipedia](https://en.wikipedia.org/wiki/A*_search_algorithm).
 
 OpenCV is not necessarily required, provided that you have found another way to convert input images into arrays which have the same format used in the example.
 
@@ -13,7 +13,7 @@ OpenCV is not necessarily required, provided that you have found another way to 
 
 ### Previews
 
-> **DO NOT** use images below as input images, they were scaled up for better visual effect.
+> **DO NOT** use images below as input images, they have been scaled up for better visual effect.
 
 Input | Output
 ------------ | -------------
