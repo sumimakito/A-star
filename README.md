@@ -13,19 +13,24 @@ OpenCV is not necessarily required, provided that you have found another way to 
 
 ### Previews
 
-> **DO NOT** use the images here as input images, maps below are scaled up for better visual effect.
+> **DO NOT** use images below as input images, they were scaled up for better visual effect.
 
 Input | Output
 ------------ | -------------
-![Input](assets/Map50_1_Out.png) | ![Output](assets/Map50_1_Path.png)
+![Input](assets/Map50_1_Out.png){:height="200px" width="200px"} | ![Output](assets/Map50_1_Path.png){:height="200px" width="200px"}
 
 Input | Output
 ------------ | -------------
-![Input](assets/Map50_2_Out.png) | ![Output](assets/Map50_2_Path.png)
+![Input](assets/Map50_2_Out.png){:height="200px" width="200px"} | ![Output](assets/Map50_2_Path.png){:height="200px" width="200px"}
 
 Input | Output
 ------------ | -------------
-![Input](assets/Map50_3_Out.png) | ![Output](assets/Map50_3_Path.png)
+![Input](assets/Map50_3_Out.png){:height="200px" width="200px"} | ![Output](assets/Map50_3_Path.png){:height="200px" width="200px"}
+
+### Could you buy me a cup of cappuccino?
+PayPal | Alipay
+----|----
+[PayPal](https://www.paypal.me/makito) | [Alipay](https://qr.alipay.com/a6x02021re1jk4ftcymlw79)
 
 ### License
 Beloved **MIT**
