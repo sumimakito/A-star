@@ -13,6 +13,8 @@ OpenCV is not necessarily required, provided that you have found another way to 
 
 ### Previews
 
+> **DO NOT** use the images here as input images, maps below are scaled up for better visual effect.
+
 Input | Output
 ------------ | -------------
 ![Input](assets/Map50_1_Out.png) | ![Output](assets/Map50_1_Path.png)
