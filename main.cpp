@@ -30,7 +30,7 @@ const string BRAIN_FUCKING[] = {
         "/Users/makito/Temp/Astar/Map_Brain_Fucking_Path.png"
 };
 
-const int ALLOW_VERTEX_PASSTHROUGH = 1;
+const int ALLOW_VERTEX_PASSTHROUGH = 0;
 const int NODE_FLAG_CLOSED = -1;
 const int NODE_FLAG_UNDEFINED = 0;
 const int NODE_FLAG_OPEN = 1;
@@ -43,7 +43,7 @@ const int NODE_TYPE_END = 3;
 const int G_DIRECT = 10;
 const int G_SKEW = 14;
 
-const string *FILE_PATH = M50_3;
+const string *FILE_PATH = M50_1;
 
 class MapNode {
 public:
