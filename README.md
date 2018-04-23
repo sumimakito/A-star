@@ -5,6 +5,8 @@ This is an widely used pathfinding and searching algorithm; learn more about A* 
 
 OpenCV is not necessarily required, provided that you have found another way to convert input images into arrays which have the same format used in the example.
 
+Since there might still be some problems in my implementation, so please feel free to give me any advice!
+
 ### Map samples
 
 [Map 50px 1](assets/Map50_1.bmp) | [Map 50px 2](assets/Map50_2.bmp) | [Map 50px 3](assets/Map50_3.bmp)
@@ -15,16 +17,15 @@ OpenCV is not necessarily required, provided that you have found another way to 
 
 > **DO NOT** use images below as input images, they have been scaled up for better visual effect.
 
-Input | Output
------------- | -------------
-![Input](assets/Map50_1_Out.png) | ![Output](assets/Map50_1_Path.png)
-![Input](assets/Map50_2_Out.png) | ![Output](assets/Map50_2_Path.png)
-![Input](assets/Map50_3_Out.png) | ![Output](assets/Map50_3_Path.png)
+Input | Output (Original) | Output (Improved, see [#1](https://github.com/SumiMakito/A-star/issues/1)) 
+------------ | -------------|------------ 
+![Input](assets/Map50_1_Out.png) | ![Output](assets/Map50_1_Path_Orig.png) | ![Output](assets/Map50_1_Path.png) 
+![Input](assets/Map50_2_Out.png) | ![Output](assets/Map50_2_Path_Orig.png) | ![Output](assets/Map50_2_Path.png) 
+![Input](assets/Map50_3_Out.png) | ![Output](assets/Map50_3_Path_Orig.png) | ![Output](assets/Map50_3_Path.png) 
 
-### Could you buy me a cup of cappuccino?
-PayPal | Alipay
-----|----
-[PayPal](https://www.paypal.me/makito) | [Alipay](https://qr.alipay.com/a6x02021re1jk4ftcymlw79)
+### Special thanks
+
+Thanks [@HjalteBested](https://github.com/HjalteBested) for pointing out the problem and giving me some useful advice on how to improve the algorithm in the issue [#1](https://github.com/SumiMakito/A-star/issues/1).
 
 ### License
 Beloved **MIT**

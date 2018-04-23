@@ -30,7 +30,7 @@ const string BRAIN_FUCKING[] = {
         "/Users/makito/Temp/Astar/Map_Brain_Fucking_Path.png"
 };
 
-const int ALLOW_VERTEX_PASSTHROUGH = 0;
+const int ALLOW_VERTEX_PASSTHROUGH = 1;
 const int NODE_FLAG_CLOSED = -1;
 const int NODE_FLAG_UNDEFINED = 0;
 const int NODE_FLAG_OPEN = 1;
@@ -43,7 +43,7 @@ const int NODE_TYPE_END = 3;
 const int G_DIRECT = 10;
 const int G_SKEW = 14;
 
-const string *FILE_PATH = BRAIN_FUCKING;
+const string *FILE_PATH = M50_3;
 
 class MapNode {
 public:
@@ -106,6 +106,22 @@ vector<MapNode *> find();
 void drawPath(Mat &map, vector<MapNode *> path);
 
 void drawOpenList();
+
+/**	The standard heuristic is the Manhattan distance.
+ *	Look at your cost function and see what the least cost is
+ *	for moving from one space to another.
+ *	The heuristic should be cost times manhattan distance: */
+inline int manhattan_distance(MapNode* node1, MapNode* node2){
+    return abs(node2->x - node1->x) + abs(node2->y - node1->y);
+}
+
+/**	If on your map you allow diagonal movement, then you need a different heuristic.
+ *	The Manhattan distance for (4 east, 4 north) will be 8.
+ *	However, you could simply move (4 northeast) instead, so the heuristic should be 4.
+ *	This function handles diagonals: */
+inline int diagonal_distance(MapNode* node1, MapNode* node2){
+    return max(abs(node2->x - node1->x),abs(node2->y - node1->y));
+}
 
 int main() {
     map = imread(FILE_PATH[0]);
@@ -267,7 +283,12 @@ vector<MapNode *> neighbors(MapNode *node) {
 }
 
 int computeH(MapNode *node1, MapNode *node2) {
-    return abs(node1->x - node2->x) + abs(node1->y - node2->y);
+    // return abs(node1->x - node2->x) + abs(node1->y - node2->y);
+    if (ALLOW_VERTEX_PASSTHROUGH) {
+        return diagonal_distance(node1, node2)*G_SKEW;
+    } else {
+        return manhattan_distance(node1, node2)*G_DIRECT;
+    }
 }
 
 int computeG(MapNode *node1, MapNode *node2) {
